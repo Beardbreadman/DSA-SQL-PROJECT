@@ -1,7 +1,5 @@
 # DSA_SQL_PROJECT
 
-MY FINAL PROJECT AS A STUDENT AT DIGITAL SKILL AFRICA
-
 
 ## Project Topic: Kultra Mega Stores (KMS) SQL Analysis
 
@@ -54,7 +52,7 @@ At the initial stage of the Data Cleaning and Preparation, I performed the follo
 
 
 ### Queries
--  Which product category had the highest sales?
+> Which product category had the highest sales?
 
 
 ```
@@ -67,7 +65,7 @@ At the initial stage of the Data Cleaning and Preparation, I performed the follo
  ![dsa 1](https://github.com/user-attachments/assets/72680517-c9ac-492f-a704-ed443cd03630)
 
 
-- What are the Top 3 and Bottom 3 regions in terms of sales?
+> What are the Top 3 and Bottom 3 regions in terms of sales?
 
 ```
  SELECT TOP 3 Region,sales
@@ -81,7 +79,7 @@ At the initial stage of the Data Cleaning and Preparation, I performed the follo
 
 ![dsa 2](https://github.com/user-attachments/assets/edb9a8dd-425a-40f7-8ce3-71b104d90313)
 
-- What were the total sales of appliances in Ontario?
+> What were the total sales of appliances in Ontario?
 
 
 ```
@@ -96,7 +94,7 @@ At the initial stage of the Data Cleaning and Preparation, I performed the follo
 
 
 
-- Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers
+> Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers
 
 
 1. Price adjustment
@@ -107,7 +105,7 @@ At the initial stage of the Data Cleaning and Preparation, I performed the follo
 
 
  
-- KMS incurred the most shipping cost using which shipping method
+> KMS incurred the most shipping cost using which shipping method
 
 
 ```
@@ -119,8 +117,8 @@ SELECT TOP 5 Shipping_Cost, Ship_Mode
 
 ![dsa 4](https://github.com/user-attachments/assets/abd6ce26-7acb-4ce8-82d6-b6de0c861578)
 
+> Who are the most valuable customers, and what products or services do they typically purchase?
 
-- Who are the most valuable customers, and what products or services do they typically purchase?
 
 
 ```
@@ -134,8 +132,7 @@ SELECT TOP 10 CUSTOMER_NAME, PRODUCT_NAME, PRODUCT_SUB_CATEGORY, SUM(SALES) AS T
 ![dsa 5](https://github.com/user-attachments/assets/bff6692d-6d1e-4d31-b7ae-99fed5b13d5f)
 
 
-- Which small business customer had the highest sales?
-
+> Which small business customer had the highest sales?
 
 ```
 SELECT TOP 1 CUSTOMER_NAME, CUSTOMER_SEGMENT, SUM(SALES) AS TOTAL_SALES
@@ -147,7 +144,7 @@ SELECT TOP 1 CUSTOMER_NAME, CUSTOMER_SEGMENT, SUM(SALES) AS TOTAL_SALES
   ![dsa 6](https://github.com/user-attachments/assets/6f6928e0-9d03-4bae-8920-ebe9833d65e7)
 
 
--  Which Corporate Customer placed the most number of orders in 2009 – 2012?
+> Which Corporate Customer placed the most number of orders in 2009 – 2012?
 
 
  ```
@@ -161,7 +158,7 @@ SELECT TOP 1 CUSTOMER_NAME, CUSTOMER_SEGMENT, SUM(ORDER_QUANTITY) AS TOTAL_ORDER
  ![dsa 7](https://github.com/user-attachments/assets/29859277-66d8-40db-a7e9-d73f41b89371)
 
  
-- Which consumer customer was the most profitable one?
+> Which consumer customer was the most profitable one
 
 
  ```
@@ -175,7 +172,7 @@ SELECT TOP 1 CUSTOMER_SEGMENT, CUSTOMER_NAME, SUM(ORDER_QUANTITY) AS TOTAL_ORDER
 ![dsa 8](https://github.com/user-attachments/assets/c0c0497a-a3f7-40a4-a46a-afc868146140)
 
 
-- Which customer returned items, and what segment do they belong to?
+> Which customer returned items, and what segment do they belong to?
 
 
  ```
@@ -195,7 +192,8 @@ appropriately spent shipping costs based on the Order Priority? Explain your ans
 
 Yes, they spent shipping costs based on the Order Priority but majority of the items were returned.
 
-
+## AUTHOR:
++ ### WONDERFUL EMMANUEL ADEBAYO
 
 
 
